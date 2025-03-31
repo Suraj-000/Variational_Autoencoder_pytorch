@@ -8,6 +8,20 @@ A variational autoencoder (VAE) is a type of artificial neural network used in t
 
 The encoder network takes point cloud data and maps it to a distribution in the latent space. This distribution is typically Gaussian with a mean and variance. The latent space is a lower-dimensional space where each point represents a different encoding of the point cloud data. It captures the underlying structure of the data in a compact form. From the learned distribution in the latent space, random samples are drawn. These samples are then decoded to reconstruct the point cloud data. The decoder network takes samples from the latent space and reconstructs the original point cloud.
 
+#### Functional Block Diagram
+
+Input point cloud is normalised and is given to VAE network, the VAE network learns geometric patterns from input, the encoder learns a latent representation and decoder decodes the latent vector to reconstruct the original point cloud. The learnt representation of input point cloud is then used for classification of point clouds.
+
+![Image](https://github.com/user-attachments/assets/d44b8669-e022-46af-9efa-3e089f297aed)
+
+#### Decoder
+
+The decoder consists of a sequence of fully connected layers followed by ReLU activations, with dimensions specified as 246, 512, and 1024 respectively. In the forward pass, the input is passed through the layers and reshaped to match the desired output shape. Overall, the Decoder transforms latent representations into multi-dimensional output tensors as shown in Figure. This decoder is used to reconstruct point clouds from latent representations in generative models like variational autoencoders.
+
+#### Classifier Network
+
+It takes a latent input of dimension 128 and outputs a log probability distribution over classes. The architecture consists of linear layers with dimensions specified as 128,64,32 with batch normalization, ReLU activations, and dropout for regularization, enabling it to learn discriminative features from input point cloud data and effectively classify them into predefined categories.
+
 ## Reconstructed samples
 
 #### Visualisation of 3D reconstructed models and ground truth of point clouds ModelNet40 dataset. Grey represents input point cloud and Green represents the reconstructed point cloud.
