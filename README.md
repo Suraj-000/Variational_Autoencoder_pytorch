@@ -18,13 +18,17 @@ Input point cloud is normalised and is given to VAE network, the VAE network lea
 
 The decoder consists of a sequence of fully connected layers followed by ReLU activations, with dimensions specified as 246, 512, and 1024 respectively. In the forward pass, the input is passed through the layers and reshaped to match the desired output shape. Overall, the Decoder transforms latent representations into multi-dimensional output tensors as shown in Figure. This decoder is used to reconstruct point clouds from latent representations in generative models like variational autoencoders.
 
-<img width="521" alt="Image" src="https://github.com/user-attachments/assets/b18d1f2f-fae2-42dd-904c-cd5a7c061b76" />
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/b18d1f2f-fae2-42dd-904c-cd5a7c061b76" width="50%">
+</p>
 
 #### Classifier Network
 
 It takes a latent input of dimension 128 and outputs a log probability distribution over classes. The architecture consists of linear layers with dimensions specified as 128,64,32 with batch normalization, ReLU activations, and dropout for regularization, enabling it to learn discriminative features from input point cloud data and effectively classify them into predefined categories.
 
-<img width="474" alt="Image" src="https://github.com/user-attachments/assets/b4122cbb-2762-4ec3-bd59-231678748fb8" />
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/b4122cbb-2762-4ec3-bd59-231678748fb8" width="50%">
+</p>
 
 ## Reconstructed samples
 
