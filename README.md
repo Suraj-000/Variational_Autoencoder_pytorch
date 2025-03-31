@@ -9,6 +9,14 @@ Implementing a Variational Autoencoder using pytorch for point cloud generation 
 
 ![Figure_3](https://github.com/Suraj-000/Variational_Autoencoder_pytorch/assets/83648833/c3c54590-9dba-4fe8-891c-306d3fb060d8)
 
+| ![Image](https://github.com/user-attachments/assets/ea7c6d34-9daf-44ad-a68b-55afe45e2e9d) | ![Image](https://github.com/user-attachments/assets/e0dee3f3-149d-42a7-bbe1-a906455b9524) |  ![Image](https://github.com/user-attachments/assets/6e0e5be4-572a-43d3-ad35-240f73381ade) |  ![Image](https://github.com/user-attachments/assets/4e5a8fa8-8afb-417f-915f-7a01ebbdadb2)  |
+|-|-|-|-|
+
+| ![Image](https://github.com/user-attachments/assets/a958a313-096d-482a-92e0-0d3b60689044) | ![Image](https://github.com/user-attachments/assets/84e61c26-0186-4c78-be7e-c32a9e5eabd6) |  ![Image](https://github.com/user-attachments/assets/34369abc-cd77-4b10-89f1-1364146d2fd2)  | ![Image](https://github.com/user-attachments/assets/8a69e9c8-ea38-4116-a7e4-ea50480ef2ba)|
+|-|-|-|-|
+
+
+
 ## Intepolation between chair 1 and chair 2
 
 ![Image](https://github.com/user-attachments/assets/f21ce5ec-a358-40f6-8515-d26711bf77a3)
