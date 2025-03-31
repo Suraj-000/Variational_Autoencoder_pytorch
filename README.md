@@ -1,5 +1,12 @@
 # Variational_Autoencoder_pytorch
-Implementing a Variational Autoencoder using pytorch for point cloud generation and Interpolation.
+
+## Implementing a Variational Autoencoder using pytorch for point cloud generation and Interpolation.
+
+#### Variational Autoencoder
+
+A variational autoencoder (VAE) is a type of artificial neural network used in the field of unsupervised learning and generative modeling. It is a probabilistic graphical model that combines deep learning with variational inference. VAEs are designed to learn a low-dimensional representation of input data in an unsupervised manner and generate new data points similar to the training data.
+
+The encoder network takes point cloud data and maps it to a distribution in the latent space. This distribution is typically Gaussian with a mean and variance. The latent space is a lower-dimensional space where each point represents a different encoding of the point cloud data. It captures the underlying structure of the data in a compact form. From the learned distribution in the latent space, random samples are drawn. These samples are then decoded to reconstruct the point cloud data. The decoder network takes samples from the latent space and reconstructs the original point cloud.
 
 ## Reconstructed samples
 
